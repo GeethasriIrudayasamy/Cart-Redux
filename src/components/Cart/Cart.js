@@ -5,7 +5,7 @@ import CartItem from "./CartItem";
 
 const Cart = (props) => {
     const cartItems = useSelector((state) => state.cart.items);
-    const isVisible = useSelector((state) => state.cartToggle.cartIsVisible);
+    const isVisible = useSelector((state) => state.ui.cartIsVisible);
     return (
         isVisible && (
             <Card className={classes.cart}>
