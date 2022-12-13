@@ -3,10 +3,10 @@ import classes from "./Notification.module.css";
 const Notification = (props) => {
     let specialClasses = "";
 
-    if (props.status === "error") {
+    if (props.status === "Error") {
         specialClasses = classes.error;
     }
-    if (props.status === "success") {
+    if (props.status === "Success") {
         specialClasses = classes.success;
     }
 
